@@ -1,0 +1,1 @@
+class BurgerBuilder extends Component
