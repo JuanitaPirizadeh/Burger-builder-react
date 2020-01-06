@@ -1,0 +1,5 @@
+.SideDrawer {
+    position: fixed;
+    width: 200px;
+    max-width: 70;
+}
