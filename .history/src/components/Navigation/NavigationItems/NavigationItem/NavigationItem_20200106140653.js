@@ -1,2 +1,0 @@
-
-const navigationItem = (props) => ();

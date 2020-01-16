@@ -1,1 +1,0 @@
-const toolbar = (props) => ();
