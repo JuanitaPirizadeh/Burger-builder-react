@@ -17,7 +17,7 @@ class ContactData extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'Your name'
+                    placeholder: 'Ditt namn'
                 },
                 value: '',
                 validation: {
@@ -30,7 +30,7 @@ class ContactData extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'Street'
+                    placeholder: 'Gata'
                 },
                 value: '',
                 validation: {
@@ -43,7 +43,7 @@ class ContactData extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'Zip Code'
+                    placeholder: 'Postkod'
                 },
                 value: '',
                 validation: {
@@ -59,7 +59,7 @@ class ContactData extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'Country'
+                    placeholder: 'Land'
                 },
                 value: '',
                 validation: {
@@ -72,7 +72,7 @@ class ContactData extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'email',
-                    placeholder: 'Your E-mail'
+                    placeholder: 'Din mailadress'
                 },
                 value: '',
                 validation: {
@@ -85,8 +85,8 @@ class ContactData extends Component {
                 elementType: 'select',
                 elementConfig: {
                     options: [
-                        {value: 'fastest', displayValue: 'Fastest' },
-                        {value: 'cheapest', displayValue: 'Cheapest'}
+                        {value: 'fastest', displayValue: 'Snabbast' },
+                        {value: 'cheapest', displayValue: 'Billigast'}
                     ]
                 },
                 value: 'fastest',
@@ -159,7 +159,7 @@ class ContactData extends Component {
             touched={formElement.config.touched}
             changed={(event) => this.inputChangedHandler(event, formElement.id)} />
         ))}
-        <Button btnType="Success" disabled={!this.state.formIsValid}>ORDER</Button>
+        <Button btnType="Success" disabled={!this.state.formIsValid}>BESTÄLL</Button>
         </form>);
 
         if (this.props.loading) {
@@ -167,7 +167,7 @@ class ContactData extends Component {
         }
         return(
             <div className={classes.ContactData}>
-                <h4>Enter your contact data</h4>
+                <h4>Fyll i din kontaktinformation, så skickar vi en bild på burgaren</h4>
                 {form}
             </div>
 

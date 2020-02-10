@@ -15,15 +15,15 @@ class OrderSummary extends Component {
 
         return (
             <Aux>
-                <h3>Your Order</h3>
-                <p>A delicious burger with the following ingredients:</p>
+                <h3>Din beställning!</h3>
+                <p>En skräddarsydd burgare med följande ingredienser:</p>
                 <ul>
                     {ingredientSummary}
                 </ul>
-                <p><strong>Total Price: {this.props.price.toFixed( 2 )}</strong></p>
-                <p>Continue to Checkout?</p>
-                <Button btnType="Danger" clicked={this.props.purchaseCancelled}>CANCEL</Button>
-                <Button btnType="Success" clicked={this.props.purchaseContinued}>CONTINUE</Button>
+                <p><strong>Total pris i bitcoins: {this.props.price.toFixed( 2 )}</strong></p>
+                <p>Ser det rätt ut?</p>
+                <Button btnType="Danger" clicked={this.props.purchaseCancelled}>AVBRYT</Button>
+                <Button btnType="Success" clicked={this.props.purchaseContinued}>GÅ VIDARE</Button>
             </Aux>
         );
     }
